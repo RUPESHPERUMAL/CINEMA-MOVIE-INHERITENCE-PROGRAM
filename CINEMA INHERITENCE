@@ -1,0 +1,37 @@
+class Movie {
+    String title;
+    int durationMinutes;
+
+    Movie(String title, int durationMinutes) {
+        this.title = title;
+        this.durationMinutes = durationMinutes;
+    }
+
+    void display() {
+        System.out.println("Title: " + title);
+        System.out.println("Duration: " + durationMinutes + " minutes");
+    }
+}
+
+class Movie3D extends Movie {
+    boolean glassesRequired;
+
+    Movie3D(String title, int durationMinutes, boolean glassesRequired) {
+        super(title, durationMinutes);
+        this.glassesRequired = glassesRequired;
+    }
+
+    @Override
+    void display() {
+        System.out.println("Title: " + title);
+        System.out.println("Duration: " + durationMinutes + " minutes");
+        System.out.println("3D Glasses Required: " + glassesRequired);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Movie3D movie = new Movie3D("Avatar 3D", 180, true);
+        movie.display();
+    }
+}
