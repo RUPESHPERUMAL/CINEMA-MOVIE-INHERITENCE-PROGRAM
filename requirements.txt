@@ -1,0 +1,2 @@
+Java JDK 8 or higher
+No external dependencies required
