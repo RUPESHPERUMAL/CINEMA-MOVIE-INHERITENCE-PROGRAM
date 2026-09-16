@@ -1,0 +1,3 @@
+Title: Avatar 3D
+Duration: 180 minutes
+3D Glasses Required: true
